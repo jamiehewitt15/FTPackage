@@ -1,13 +1,5 @@
 const fetch = require('node-fetch');
 
-const urls = [
-    'https://ft-tech-test-example.s3-eu-west-1.amazonaws.com/ftse-fsi.json',
-    'https://ft-tech-test-example.s3-eu-west-1.amazonaws.com/gbp-hkd.json',
-    'https://ft-tech-test-example.s3-eu-west-1.amazonaws.com/gbp-usd.json'
-    ];
-
-
-
 const getURLdata = async url => {
     try {
       const response = await fetch(url)
@@ -19,15 +11,6 @@ const getURLdata = async url => {
     }
   };
 
-
-
-function dataFromURLs(urls){ 
-    urls.map(getURLdata) 
-};
-
-dataFromURLs(urls);
-  
-  
 function checkStatus(res) {
     if (res.ok) { // res.status >= 200 && res.status < 300
         return res;
@@ -35,4 +18,14 @@ function checkStatus(res) {
         throw new Error(res.statusText);
     }
 }
+
+module.exports = (urls) => { 
+    let dataArray = Promise.all(urls.map(getURLdata)); 
+    return dataArray;
+};
+
+
+  
+  
+
 
