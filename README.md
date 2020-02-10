@@ -6,7 +6,7 @@ A package to fetch URLs that contain JSON data and return the contents in a prom
 This package requests all JSON data from an array of URLs. The requests are handled asynchronously and any erros are caught during the process.
 
 # Features
-- This package makes use of the fetch API (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) made available in node through the node-fetch dependancy. This is a alternative to XMLHttpRequest that require minimal code.
+- This package makes use of the `fetch` API (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) made available in node through the `node-fetch` dependancy. This is an alternative to `XMLHttpRequest` that require minimal code.
 - This package uses await & fetch for the asynchronous requests.
 
 # Installation
@@ -14,11 +14,11 @@ This package requests all JSON data from an array of URLs. The requests are hand
 
 # Loading and configuring the module
 We suggest you load the module via require:
-
+```
 const requestMultipleUrls = require('ft-package');
-
+```
 # Common Use Case Example
-
+```
 const requestMultipleUrls = require('ft-package');
 
 const urls = [
@@ -30,3 +30,4 @@ const urls = [
 requestMultipleUrls(urls).then(urlContent => {
     console.log(urlContent)
     });
+```
