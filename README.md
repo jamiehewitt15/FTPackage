@@ -6,7 +6,7 @@ A package to fetch URLs that contain JSON data and return the contents in a prom
 This package requests all JSON data from an array of URLs. The requests are handled asynchronously and any erros are caught during the process.
 
 # Features
-- This package makes use of the `fetch` API (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) made available in node through the `node-fetch` dependancy (https://www.npmjs.com/package/node-fetch). This is an alternative to `XMLHttpRequest` that require minimal code.
+- This package makes use of the `fetch` API (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) made available in node through the `node-fetch` dependancy (https://www.npmjs.com/package/node-fetch). This is an alternative to `XMLHttpRequest` that requires minimal code.
 - This package uses `async` & `await` for the asynchronous requests.
 
 # Installation
