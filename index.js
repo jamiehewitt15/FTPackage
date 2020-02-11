@@ -7,7 +7,7 @@ const getURLdata = async url => {
       const json = await response.json();
       return json;
     } catch (error) {
-      console.log("Sorry there was an error. Please check the URL you are requesting from", error);
+      console.log("Sorry there was an error. Please check the URL you are requesting from, there may be no JSON data.", error);
     }
   };
 
