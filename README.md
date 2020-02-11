@@ -10,8 +10,9 @@ This package requests all JSON data from an array of URLs. The requests are hand
 - This package uses `async` & `await` for the asynchronous requests.
 
 # Installation
- // Curently still in development but the package will be installed via npm once it is published.
-
+```
+ npm install ftproject
+```
 # Loading and configuring the module
 We suggest you load the module via `require`:
 ```
