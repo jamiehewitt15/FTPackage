@@ -16,11 +16,11 @@ This package requests all JSON data from an array of URLs. The requests are hand
 # Loading and configuring the module
 We suggest you load the module via `require`:
 ```
-const requestMultipleUrls = require('ft-package');
+const requestMultipleUrls = require('ftproject');
 ```
 # Common Use Case Example
 ```
-const requestMultipleUrls = require('ft-package');
+const requestMultipleUrls = require('ftproject');
 
 const urls = [
 'https://ft-tech-test-example.s3-eu-west-1.amazonaws.com/ftse-fsi.json',
